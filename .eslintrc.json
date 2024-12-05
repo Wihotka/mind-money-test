@@ -1,3 +1,19 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react-hooks/exhaustive-deps": 0,
+    "prefer-const": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": [2, "single"],
+    "newline-before-return": "warn",
+    "max-len": [
+      "error",
+      {
+        "code": 1100,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  }
 }
