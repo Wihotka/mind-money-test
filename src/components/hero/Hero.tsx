@@ -5,7 +5,7 @@ const Hero = () => {
     <Box
       sx={{
         width: '100%',
-        height: '100vh',
+        minHeight: '100vh',
         py: '156px',
         px: '64px',
         backgroundImage: 'url(/hero.png)',
@@ -17,14 +17,14 @@ const Hero = () => {
       <Typography
         variant='h1'
         mb='24px'
-        color='#FFFFFF'
+        color='secondary.contrastText'
         fontWeight={700}
         fontSize={40}
       >
         Start Investing in global stock markets
       </Typography>
       <Typography
-        color='#FFFFFF'
+        color='secondary.contrastText'
         fontWeight={400}
         fontSize={16}
         sx={{

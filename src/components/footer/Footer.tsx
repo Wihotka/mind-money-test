@@ -14,7 +14,7 @@ const Footer = () => {
       }}
     >
       <Typography
-        color='#A6ABB0'
+        color='primary.light'
         fontWeight={400}
         fontSize={14}
         lineHeight='20px'
@@ -22,16 +22,17 @@ const Footer = () => {
         © 2024 MIND MONEY LIMITED
       </Typography>
       <Typography
-        color='#A6ABB0'
+        color='primary.light'
         fontWeight={400}
         fontSize={14}
         lineHeight='20px'
         sx={{
           display: 'flex',
+          gap: '4px',
         }}
       >
         <span>Have some issue?</span>
-        <span>Wrote us <Link type='email' href={'mailto:info@mind-money.eu'} sx={{ color: '#526ED3', textDecoration: 'none' }}>info@mind-money.eu</Link></span>
+        <span>Wrote us <Link type='email' href={'mailto:info@mind-money.eu'} color='secondary' sx={{ textDecoration: 'none' }}>info@mind-money.eu</Link></span>
       </Typography>
     </Box>
   );
